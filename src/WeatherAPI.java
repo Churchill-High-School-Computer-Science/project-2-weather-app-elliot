@@ -52,8 +52,8 @@ public class WeatherAPI {
         String name = getCityName(blockOfText);
         String feels = getFeelsLike(blockOfText);
         String humid = getHumidity(blockOfText);
-        String temp = getTemp(blockOfText);  
-        return 
+        String temp = "temperature: " + getTemp(blockOfText) + " degrees °F";  
+        return name + "\n" + temp + "\n" + feels + "\n" + humid;
     }
 
     //Returns the name of the city
